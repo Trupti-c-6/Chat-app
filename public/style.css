@@ -1,0 +1,23 @@
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f3f4f6}
+.app{display:flex;height:100vh}
+.sidebar{width:240px;background:#0f172a;color:#fff;padding:16px;display:flex;flex-direction:column}
+.sidebar h2{margin:0 0 8px}
+#rooms{list-style:none;padding:0;margin:0;flex:1;overflow:auto}
+#rooms li{padding:8px;border-radius:6px;margin-bottom:6px;cursor:pointer;background:rgba(255,255,255,0.03)}
+.create-room{display:flex;gap:6px}
+.create-room input{flex:1;padding:8px;border-radius:6px;border:none}
+.create-room button{padding:8px;border-radius:6px;border:none;background:#06b6d4;color:#052025}
+.chat-area{flex:1;display:flex;flex-direction:column}
+.chat-header{background:#fff;padding:12px;border-bottom:1px solid #e5e7eb;display:flex;justify-content:space-between}
+.messages{flex:1;padding:12px;overflow:auto;background:#fafafa}
+.message{margin-bottom:10px}
+.message .meta{font-size:12px;color:#6b7280}
+.message .text{margin-top:4px}
+.message.system{color:#6b7280;font-style:italic}
+.message-form{display:flex;padding:12px;border-top:1px solid #e5e7eb;background:#fff}
+.message-form input{flex:1;padding:10px;border-radius:6px;border:1px solid #e5e7eb}
+.message-form button{padding:10px;margin-left:8px;border-radius:6px;border:none;background:#0ea5a9;color:#fff}
+.modal{position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center}
+.modal .modal-content{background:#fff;padding:18px;border-radius:8px;width:320px}
+@media(max-width:700px){.sidebar{display:none}.chat-area{flex:1}}
